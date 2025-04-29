@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ocupacao</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  body {
+    background-image: url('https://github.com/039651/meu-site/blob/main/Fundo.JPG.jpg?raw=true');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.95);
+    /* fundo branco com transparência */
+    padding: 30px;
+    border-radius: 10px;
+  }
+</style>
+
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Informações do trabalho</h2>
+
+    <form>
+      <!-- TRABALHO -->
+      <div class="col-md-3">
+        <label class="form-label">Ocupação</label>
+        <select class="form-select">
+          <option selected disabled>Assalariado</option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Empresa</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Setor da Empresa</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label class="form-label">Setor</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Telefone do local de trabalho</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Trabalha desde:</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Salario</label>
+          <input type="date" class="form-control">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Cargo/Função</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Profissão(CBO)</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="mb-4">
+
+        <button class="btn btn-success mb-3" id="addButton">Adicionar Nova ocupacao</button>
+
+      </div>
+    </form>
+
+    <!-- Tabela de Listagem -->
+    <h2 class="mt-5"></h2>
+    <table class="table table-striped" id="workTable">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Ocupação</th>
+          <th scope="col">Empresa</th>
+          <th scope="col">Setor da Empresa</th>
+          <th scope="col">Telefone</th>
+          <th scope="col">Trabalha Desde</th>
+          <th scope="col">Salário</th>
+          <th scope="col">Cargo/Função</th>
+          <th scope="col">Profissão (CBO)</th>
+        </tr>
+      </thead>
+      <tbody id="workTableBody">
+      </tbody>
+    </table>
+    
+    <!-- Botões -->
+    <div class="d-flex justify-content-between mt-4">
+      <a href="Endereco.html" class="btn btn-danger">Voltar</a>
+      <a href="" class="btn btn-primary">Próximo</a>
+    </div>
+    
+    </div> 
+    </form> 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
