@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ederecos e referencias</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="icon" href="https://github.com/039651/G/blob/main/GG.jpg?raw=true" type="imagem/x-icon">
       </head>
       <style>
         body {
@@ -20,38 +21,56 @@
           padding: 30px;
           border-radius: 10px;
         }
+        .linha-info {
+  position: absolute;
+  top: 30px; /* Ajuste conforme necessário, p/ cima e p/ baixo e (-1) p/ cima - (+1) p/ baixo */
+  left: 110px; /* Ajuste conforme necessário, p/ lateral esquerda e direita (-1) esquerda - (+1) direita*/
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.linha-info span {
+  display: inline-block;
+  margin-right: 05px; /* Espaçamento entre os textos */
+  white-space: nowrap;
+}
       </style>
-     
-<body>
+      <div class="linha-info">
+        <span>Nome Cliente: Lu*** V***** ** L***</span>
+        <span>CPF/CNPJ: 123.000.000-20</span>
+      </div>
+    <body>
     <div class="container mt-5">
  <!-- Endereço -->
- <h5 class="mt-4">Endereço</h5>
+ <h4 class="mt-4">LOCALIZAÇÃO E REFERÊNCIA</h4>
+ <h6 class="mt-4">ENDEREÇO</h6>
  <div class="row mb-3">
    <div class="col-md-3">
      <label class="form-label">CEP</label>
-     <input type="text" class="form-control">
+     <input type="text" class="form-control"placeholder=00000-000>
    </div>
    <div class="col-md-6">
      <label class="form-label">Logradouro</label>
-     <input type="text" class="form-control">
+     <input type="text" class="form-control"placeholder=Rua>
    </div>
-   <div class="col-md-3">
+   <div class="col-md-1">
      <label class="form-label">Número</label>
-     <input type="text" class="form-control">
+     <input type="text" class="form-control"placeholder=S/N>
    </div>
  </div>
  <div class="row mb-3">
    <div class="col-md-3">
      <label class="form-label">Complemento</label>
-     <input type="text" class="form-control">
+     <input type="text" class="form-control"placeholder=Casa>
    </div>
    <div class="col-md-3">
      <label class="form-label">Bairro</label>
-     <input type="text" class="form-control">
+     <input type="text" class="form-control"placeholder=Bairro/Setor>
    </div>
    <div class="col-md-3">
      <label class="form-label">Cidade</label>
-     <input type="text" class="form-control">
+     <input type="text" class="form-control"placeholder=Cidade>
    </div>
    <div class="col-md-3">
      <label class="form-label">Estado</label>
@@ -87,100 +106,103 @@
      </select>
    </div>
    <!-- Checkbox + Botão -->
-<label>
-  <input type="checkbox" id="mesmoEnderecoCheckbox"> Este endereço é o mesmo para entrega?
-</label><br>
-
-<div class="mb-4">
-  <button type="button" class="btn btn-success btn-sm me-2" id="addButton">Novo Endereço de entrega</button>
-</div>
-
-<!-- Campos de Endereço Oculto -->
-<div id="enderecoOpcional" style="display: none;">
-  <h5 class="mt-4">Endereço de entrega (opcional)</h5>
-  <div class="row mb-3">
-    <div class="col-md-3">
-      <label class="form-label">CEP</label>
-      <input type="text" class="form-control">
+   <form>
+    <!-- Dados Pessoais -->
+    <label>
+      <input type="checkbox" id="mesmoEnderecoCheckbox" checked> O endereço Principal é o mesmo para entrega!
+    </label><br>
+    <div class="mb-4">
+      <button type="button" class="btn btn-success btn-sm me-2" id="addButton" disabled>Novo Endereço de entrega</button>
     </div>
-    <div class="col-md-6">
-      <label class="form-label">Logradouro</label>
-      <input type="text" class="form-control">
+  
+    <!-- Campos de Endereço Oculto -->
+    <div id="enderecoOpcional" style="display: none;">
+      <h5 class="mt-4">Endereço de entrega (opcional)</h5>
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label class="form-label">CEP</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Logradouro</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Número</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label class="form-label">Complemento</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Bairro</label>
+          <input type="text" class="form-control>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Cidade</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Estado</label>
+          <select class="form-select">
+            <option selected disabled>Selecione</option>
+            <option>AC</option>
+            <option>AL</option>
+            <option>AP</option>
+            <option>AM</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MT</option>
+            <option>MS</option>
+            <option>MG</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PR</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RS</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>SC</option>
+            <option>SP</option>
+            <option>SE</option>
+            <option>TO</option>
+          </select>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3">
-      <label class="form-label">Número</label>
-      <input type="text" class="form-control">
-    </div>
-  </div>
-  <div class="row mb-3">
-    <div class="col-md-3">
-      <label class="form-label">Complemento</label>
-      <input type="text" class="form-control">
-    </div>
-    <div class="col-md-3">
-      <label class="form-label">Bairro</label>
-      <input type="text" class="form-control">
-    </div>
-    <div class="col-md-3">
-      <label class="form-label">Cidade</label>
-      <input type="text" class="form-control">
-    </div>
-    <div class="col-md-3">
-      <label class="form-label">Estado</label>
-      <select class="form-select">
-        <option selected disabled>Selecione</option>
-        <option>AC</option>
-        <option>AL</option>
-        <option>AP</option>
-        <option>AM</option>
-        <option>BA</option>
-        <option>CE</option>
-        <option>DF</option>
-        <option>GO</option>
-        <option>MA</option>
-        <option>MT</option>
-        <option>MS</option>
-        <option>MG</option>
-        <option>PA</option>
-        <option>PB</option>
-        <option>PR</option>
-        <option>PE</option>
-        <option>PI</option>
-        <option>RJ</option>
-        <option>RN</option>
-        <option>RS</option>
-        <option>RO</option>
-        <option>RR</option>
-        <option>SC</option>
-        <option>SP</option>
-        <option>SE</option>
-        <option>TO</option>
-      </select>
-    </div>
-  </div>
-</div>
-
-<!-- JavaScript FUNCIONAL -->
-<script>
-  const checkbox = document.getElementById('mesmoEnderecoCheckbox');
-  const botao = document.getElementById('addButton');
-  const blocoEndereco = document.getElementById('enderecoOpcional');
-
-  // Quando o checkbox for alterado
-  checkbox.addEventListener('change', () => {
-    if (checkbox.checked) {
-      botao.disabled = true;
-      blocoEndereco.style.display = 'none';
-    } else {
-      botao.disabled = false;
-    }
-  });
-
-  // Quando clicar no botão, exibe o campo
-  botao.addEventListener('click', () => {
-    blocoEndereco.style.display = 'block';
-  });
-</script>
+  </form>
+  
+  <!-- JavaScript FUNCIONAL -->
+  <script>
+    const checkbox = document.getElementById('mesmoEnderecoCheckbox');
+    const botao = document.getElementById('addButton');
+    const blocoEndereco = document.getElementById('enderecoOpcional');
+  
+    // Quando o checkbox for alterado
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        botao.disabled = true;
+        blocoEndereco.style.display = 'none';
+      } else {
+        botao.disabled = false;
+      }
+    });
+  
+    // Quando clicar no botão, exibe o campo
+    botao.addEventListener('click', () => {
+      blocoEndereco.style.display = 'block';
+    });
+  </script>
+  
   
  <!-- Endereço Opcional -->
  <!--<h5 class="mt-4">Endereço de entrega (opcional)</h5>
@@ -249,9 +271,9 @@
  <!-- Referência Familiar -->
  <div class="row mb-4">
   <div class="col-md-2">
-    <label class="form-label">Parentesco</label>
+    <h6 class="form-label">REFERÊNCIA</h6>
     <select class="form-select">
-      <option selected disabled>Escolha</option>
+      <option selected disabled>Parentesco</option>
       <option>Irmao(a)</option>
       <option>Tio(a)</option>
       <option>Avo</option>
@@ -263,18 +285,21 @@
   </div>
   <div class="col-md-5">
     <label class="form-label">Nome</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control"placeholder=Nome>
   </div>
-  <div class="col-md-5">
-    <label class="form-label">Telefone do Parente</label>
-    <input type="tel" class="form-control">
+  <div class="col-md-1">
+    <label class="form-label">DDD</label>
+    <input type="text" id="ddd" class="form-control" placeholder="00">
   </div>
+  <div class="col-md-2">
+    <label class="form-label">Telefone</label>
+    <input type="text" id="telefone" class="form-control" placeholder="00000-0000">
+  </div>   
 </div>
 <div class="row mb-4">
   <div class="col-md-2">
-    <label class="form-label">Parentesco</label>
     <select class="form-select">
-      <option selected disabled>Escolha</option>
+      <option selected disabled>Parentesco</option>
       <option>Irmao(a)</option>
       <option>Tio(a)</option>
       <option>Avo</option>
@@ -285,13 +310,14 @@
     </select>
   </div>
   <div class="col-md-5">
-    <label class="form-label">Nome</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control"placeholder=Nome>
   </div>
-  <div class="col-md-5">
-    <label class="form-label">Telefone do Parente</label>
-    <input type="tel" class="form-control">
+  <div class="col-md-1">
+    <input type="text" id="ddd" class="form-control" placeholder="00">
   </div>
+  <div class="col-md-2">
+    <input type="text" id="telefone" class="form-control" placeholder="00000-0000">
+  </div>  
 </div>
 
 
