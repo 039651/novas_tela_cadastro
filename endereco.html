@@ -55,31 +55,31 @@
     <div class="row mb-3">
       <div class="col-md-3">
         <label class="form-label">CEP</label>
-        <input type="text" class="form-control" placeholder=00000-000>
+        <input type="text" class="form-control" placeholder="00000-000">
       </div>
       <div class="col-md-6">
         <label class="form-label">Logradouro</label>
-        <input type="text" class="form-control" placeholder=Rua>
+        <input type="text" class="form-control" placeholder="Rua">
       </div>
       <div class="col-md-1">
         <label class="form-label">Número</label>
-        <input type="text" class="form-control" placeholder=S/N>
+        <input type="text" class="form-control" placeholder="S/N">
       </div>
     </div>
     <div class="row mb-3">
       <div class="col-md-3">
         <label class="form-label">Complemento</label>
-        <input type="text" class="form-control" placeholder=Casa>
+        <input type="text" class="form-control" placeholder="Casa">
       </div>
       <div class="col-md-3">
         <label class="form-label">Bairro</label>
-        <input type="text" class="form-control" placeholder=Bairro/Setor>
+        <input type="text" class="form-control" placeholder="Bairro/Setor">
       </div>
       <div class="col-md-3">
         <label class="form-label">Cidade</label>
-        <input type="text" class="form-control" placeholder=Cidade>
+        <input type="text" class="form-control" placeholder="Cidade">
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
         <label class="form-label">Estado</label>
         <select class="form-select">
           <option selected disabled>Selecione</option>
@@ -122,71 +122,71 @@
           <button type="button" class="btn btn-success btn-sm me-2" id="addButton" disabled>Novo Endereço de
             entrega</button>
         </div>
-
         <!-- Campos de Endereço Oculto -->
         <div id="enderecoOpcional" style="display: none;">
           <h5 class="mt-4">Endereço de entrega (opcional)</h5>
           <div class="row mb-3">
             <div class="col-md-3">
               <label class="form-label">CEP</label>
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" placeholder="00000-000">
             </div>
             <div class="col-md-6">
               <label class="form-label">Logradouro</label>
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" placeholder="Rua/AV">
             </div>
-            <div class="col-md-3">
+            <div class="col-md-1">
               <label class="form-label">Número</label>
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" placeholder="S/N">
             </div>
           </div>
           <div class="row mb-3">
             <div class="col-md-3">
               <label class="form-label">Complemento</label>
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" placeholder="Casa">
             </div>
             <div class="col-md-3">
               <label class="form-label">Bairro</label>
-              <input type="text" class="form-control>
-        <div class=" col-md-3">
+              <input type="text" class="form-control" placeholder="Setor">
+            </div>
+            <div class=" col-md-3">
               <label class="form-label">Cidade</label>
-              <input type="text" class="form-control">
-              <div class="col-md-3">
-                <label class="form-label">Estado</label>
-                <select class="form-select">
-                  <option selected disabled>Selecione</option>
-                  <option>AC</option>
-                  <option>AL</option>
-                  <option>AP</option>
-                  <option>AM</option>
-                  <option>BA</option>
-                  <option>CE</option>
-                  <option>DF</option>
-                  <option>GO</option>
-                  <option>MA</option>
-                  <option>MT</option>
-                  <option>MS</option>
-                  <option>MG</option>
-                  <option>PA</option>
-                  <option>PB</option>
-                  <option>PR</option>
-                  <option>PE</option>
-                  <option>PI</option>
-                  <option>RJ</option>
-                  <option>RN</option>
-                  <option>RS</option>
-                  <option>RO</option>
-                  <option>RR</option>
-                  <option>SC</option>
-                  <option>SP</option>
-                  <option>SE</option>
-                  <option>TO</option>
-                </select>
-              </div>
+              <input type="text" class="form-control" placeholder="Cidade">
+            </div>
+            <div class="col-md-2">
+              <label class="form-label">Estado</label>
+              <select class="form-select">
+                <option selected disabled>Selecione</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+              </select>
             </div>
           </div>
         </div>
-      </div>
+    </div>
     </form>
 
     <!-- JavaScript FUNCIONAL -->
@@ -211,71 +211,6 @@
       });
     </script>
 
-
-    <!-- Endereço Opcional -->
-    <!--<h5 class="mt-4">Endereço de entrega (opcional)</h5>
- <div class="row mb-3">
-   <div class="col-md-3">
-     <label class="form-label">CEP</label>
-     <input type="text" class="form-control">
-   </div>
-   <div class="col-md-6">
-     <label class="form-label">Logradouro</label>
-     <input type="text" class="form-control">
-   </div>
-   <div class="col-md-3">
-     <label class="form-label">Número</label>
-     <input type="text" class="form-control">
-   </div>
- </div>
- <div class="row mb-3">
-   <div class="col-md-3">
-     <label class="form-label">Complemento</label>
-     <input type="text" class="form-control">
-   </div>
-   <div class="col-md-3">
-     <label class="form-label">Bairro</label>
-     <input type="text" class="form-control">
-   </div>
-   <div class="col-md-3">
-     <label class="form-label">Cidade</label>
-     <input type="text" class="form-control">
-   </div>
-   <div class="col-md-3">
-     <label class="form-label">Estado</label>
-     <select class="form-select">
-       <option selected disabled>Selecione</option>
-       <option>AC</option>
-       <option>AL</option>
-       <option>AP</option>
-       <option>AM</option>
-       <option>BA</option>
-       <option>CE</option>
-       <option>DF</option>
-       <option>ES</option>
-       <option>GO</option>
-       <option>MA</option>
-       <option>MT</option>
-       <option>MS</option>
-       <option>MG</option>
-       <option>PA</option>
-       <option>PB</option>
-       <option>PR</option>
-       <option>PE</option>
-       <option>PI</option>
-       <option>RJ</option>
-       <option>RN</option>
-       <option>RS</option>
-       <option>RO</option>
-       <option>RR</option>
-       <option>SC</option>
-       <option>SP</option>
-       <option>SE</option>
-       <option>TO</option>
-     </select>
-   </div>
- </div>-->
-
     <!-- Referência Familiar -->
     <div class="row mb-4">
       <div class="col-md-2">
@@ -293,7 +228,7 @@
       </div>
       <div class="col-md-5">
         <label class="form-label">Nome</label>
-        <input type="text" class="form-control" placeholder=Nome>
+        <input type="text" class="form-control" placeholder="Nome">
       </div>
       <div class="col-md-1">
         <label class="form-label">DDD</label>
@@ -318,7 +253,7 @@
         </select>
       </div>
       <div class="col-md-5">
-        <input type="text" class="form-control" placeholder=Nome>
+        <input type="text" class="form-control" placeholder="Nome">
       </div>
       <div class="col-md-1">
         <input type="text" id="ddd" class="form-control" placeholder="00">
